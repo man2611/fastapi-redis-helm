@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-python-api
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-python-api
+    spec:
+      containers:
+        - name: python-api
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: {{ .Release.Name }}-redis-cm
+            - secretRef:
+                name: {{ .Release.Name }}-redis-secret

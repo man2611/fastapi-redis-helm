@@ -1,0 +1,10 @@
+image:
+  repository: python-api
+  tag: latest
+  pullPolicy: Never
+
+ingress:
+  host: localhost
+
+redis:
+  password: redis-123

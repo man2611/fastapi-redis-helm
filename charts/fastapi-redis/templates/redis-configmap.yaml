@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-redis-cm
+data:
+  REDIS_HOST: "{{ .Release.Name }}-redis"
+  REDIS_PORT: "6379"
