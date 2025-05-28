@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/man2611/fastapi-redis-helm.git
     targetRevision: HEAD
-    path: charts
+    path: charts/fastapi-redis
     helm:
       valueFiles:
         - ../values-dev.yaml
