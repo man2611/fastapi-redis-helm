@@ -11,7 +11,7 @@ spec:
     path: charts/fastapi-redis
     helm:
       valueFiles:
-        - ../values-dev.yaml
+        - ../../values-dev.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
