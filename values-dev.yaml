@@ -1,0 +1,4 @@
+image:
+  repository: python-api
+  tag: dev
+replicaCount: 1
