@@ -1,5 +1,5 @@
 image:
-  repository: fastapi
+  repository: python-api
   tag: dev
   pullPolicy: Never
 
