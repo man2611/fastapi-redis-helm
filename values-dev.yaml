@@ -1,6 +1,6 @@
 image:
   repository: myregistry/fastapi
-  tag: Dev
+  tag: dev
   pullPolicy: IfNotPresent
 
 replicaCount: 1
