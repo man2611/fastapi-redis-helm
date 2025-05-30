@@ -1,6 +1,6 @@
 image:
-  repository: python-api
-  tag: dev
+  repository: fastapi-redis-app
+  tag: 2.0
   pullPolicy: Never
 
 replicaCount: 1
