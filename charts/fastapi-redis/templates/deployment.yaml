@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: {{ .Release.Name }}-python-api
 spec:
+  revisionHistoryLimit: 3
   replicas: 1
   selector:
     matchLabels:
