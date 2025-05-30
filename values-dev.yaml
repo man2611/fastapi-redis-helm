@@ -6,7 +6,7 @@ image:
 replicaCount: 1
 
 ingress:
-  host: localhost
+  host: fastapi-dev.local
 
 redis:
   password: redis-123
